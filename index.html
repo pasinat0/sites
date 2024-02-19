@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-    <link rel="stylesheet" href="geral.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 50px;
+        }
+        .btn {
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 15px 32px;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+        .btn-yes {
+            background-color: green;
+            border: none;
+            color: white;
+        }
+        .btn-no {
+            background-color: red;
+            border: none;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Meu Site</h1>
-    </div>
-    <div class="letra">
-      <h1 class="titulo">Bem vindo</h1>
-      <p class="sub">ao meu espaço digital profissional. Explore meu currículo e aprofunde-se nos projetos que evidenciam minha dedicação e competência em desenvolvimento. Sinta-se à vontade para explorar e conhecer mais sobre minha trajetória:</p>
-    </div>
-    <div class="content">
-        <div>
-            <a href="./documentos/curriulo.pdf" target="_blank"><img src="./img/Do_pato_1.png" alt="Imagem 1"></a>
-            <p><a href="./documentos/curriulo.pdf" target="_blank" class="link">Curriculo</a></p>
-        </div>
-        <div>
-            <a href="portifolio.html"><img src="./img/Do_pato_2.png" alt="Imagem 2"></a>
-            <p><a href="curriculo.html" class="link">portifólio</a></p>
-        </div>
-        <div>
-            <a href="https://github.com/pasinat0"><img src="./img/Do_pato_3.png" alt="Imagem 3"></a>
-            <p><a href="https://github.com/pasinat0" class="link">GitHub</a></p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Este é um rodapé simples</p>
-    </div>
-    <script src="geral.js"></script>  
+    <h1>Quer namorar comigo?</h1>
+    <button class="btn btn-yes" onclick="location.href='imagem.html'">Sim</button>
+    <button class="btn btn-no" id="no-btn">Não</button>
+
+    <script>
+        document.getElementById('no-btn').addEventListener('mouseover', function() {
+            this.style.position = 'absolute';
+            this.style.left = Math.random() * window.innerWidth + 'px';
+            this.style.top = Math.random() * window.innerHeight + 'px';
+        });
+    </script>
 </body>
 </html>
