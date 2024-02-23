@@ -1,0 +1,68 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  background-color: rgb(35, 73, 145);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.titulo{
+  color:rgb(35, 73, 145);
+  font-size: 50px;
+  margin-bottom: 0;
+  
+}
+
+.letra{
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+
+.sub{
+  font-size: x-large;
+  width: 80%;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+.link{
+  font-size: large;
+  
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.content div {
+  text-align: center;
+  margin: 40px; 
+}
+
+.content img {
+  width: 300px;
+  height: 300px;
+  
+}
+
+.footer {
+  background-color: rgb(35, 73, 145);
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0;
+}
